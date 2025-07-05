@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
     return (
-        <div className="bg-base-200">
+        <div className="bg-[#121e28] sticky top-0 z-50 shadow-lg">
             <div className="navbar container mx-auto">
                 {/* Left - Logo + Name */}
                 <div className="navbar-start">

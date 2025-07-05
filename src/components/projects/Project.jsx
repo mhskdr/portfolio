@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 
 const Project = forwardRef((props, ref) => {
     return (
-        <div className='bg-base-200'>
+        <div className='bg-[#121e28]'>
             <section ref={ref} className="py-12 px-4 md:px-16 container mx-auto space-y-12">
                 <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
                 {/* 1st showCard */}

@@ -13,15 +13,17 @@ const SkillMarquee = () => {
         "Tailwind CSS",
         "Firebase",
         "Git",
-        "GitHub"
+        "GitHub",
+        "DaisyUI",
+        "Framer",
     ];
     return (
-        <div className="bg-base-200 py-4">
+        <div className="bg-[#17232d] py-4">
             <Marquee direction="left" speed={50} gradient={false}>
                 {skills.map((skill, index) => (
                     <span
                         key={index}
-                        className="mx-6 text-lg font-semibold text-primary whitespace-nowrap"
+                        className="mx-6 text-lg font-bold text-primary"
                     >
                         {skill}
                     </span>

@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 const Banner = ({ onProjectsClick, onContactClick }) => {
     return (
-        <div className="hero min-h-[60vh]">
+        <div className="hero bg-[#121e28]">
             <div className="hero-content flex-col lg:flex-row w-full px-6 lg:px-12 gap-8">
                 {/* Text Section */}
                 <div className="flex-1 text-center lg:text-left max-w-[600px]">
@@ -26,7 +26,7 @@ const Banner = ({ onProjectsClick, onContactClick }) => {
                     </p>
                     <div className="flex gap-4 justify-center lg:justify-start">
                         <button onClick={onProjectsClick} className="btn btn-primary">View Project</button>
-                        <button onClick={onContactClick} className="btn btn-primary">Contact Now</button>
+                        <button onClick={onContactClick} className="btn btn-primary btn-outline">Contact Now</button>
                     </div>
                 </div>
 

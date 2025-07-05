@@ -3,7 +3,7 @@ import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = ({ onAboutClick, onProjectsClick, onContactClick }) => {
     return (
-        <div className="bg-base-200">
+        <div className="bg-[#18242e] text-base-100">
             <footer className="text-base-content py-10 px-4 text-center container mx-auto">
             {/* Navigation Links */}
             <nav className="flex justify-center gap-6 mb-4 flex-wrap">
@@ -23,13 +23,13 @@ const Footer = ({ onAboutClick, onProjectsClick, onContactClick }) => {
 
             {/* Social Media */}
             <div className="flex justify-center gap-6 text-xl mb-4">
-                <a href="https://facebook.com/mhskdr" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+                <a href="https://www.facebook.com/mhskdr" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
                     <FaFacebookF />
                 </a>
-                <a href="https://github.com/mhskdr" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+                <a href="https://www.github.com/mhskdr" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
                     <FaGithub />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+                <a href="https://www.linkedin.com/in/mobarakhosen" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
                     <FaLinkedin />
                 </a>
             </div>

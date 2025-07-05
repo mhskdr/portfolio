@@ -20,7 +20,7 @@ const About = forwardRef((props, ref) => {
     };
 
     return (
-        <div className='bg-gray-900'>
+        <div className='bg-[#121e28]'>
             <section ref={ref} className="text-white py-16 px-6 container mx-auto">
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
                     <div className="hidden lg:flex flex-col gap-8 w-1/2">

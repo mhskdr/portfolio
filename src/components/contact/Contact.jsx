@@ -15,7 +15,7 @@ const Contact = forwardRef((props, ref) => {
     };
 
     return (
-        <div className="bg-gray-900">
+        <div className="bg-[#121e28]">
             <section ref={ref} className="py-16 px-4 md:px-20 container mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-10">
                     {/* Left side */}
