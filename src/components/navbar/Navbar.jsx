@@ -1,18 +1,31 @@
 import React from "react";
+import Swal from "sweetalert2";
 
 const Navbar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
+    const handleResumeClick = () => {
+        Swal.fire({
+            title: "Resume Download",
+            text: "You can download my resume from here.",
+            icon: "info",
+            confirmButtonText: "Open Resume",
+            confirmButtonColor: "#6366f1",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.open("/resume.pdf", "_blank");
+            }
+        });
+    };
+
     return (
         <div className="bg-[#121e28] sticky top-0 z-50 shadow-lg">
             <div className="navbar container mx-auto">
                 {/* Left - Logo + Name */}
-                <div className="navbar-start">
-                    <button
-                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                        className="text-xl flex items-center gap-2 btn btn-ghost"
-                    >
-                        <img src="/mh3d.png" alt="Logo" className="h-8 w-8" />
-                        <span className="font-semibold text-lg">Md Mobarak Hosen</span>
-                    </button>
+                <div
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                    className="navbar-start cursor-pointer flex items-center gap-2"
+                >
+                    <img src="/mh3d.png" alt="Logo" className="w-[60px]" />
+                    <span className="font-semibold text-lg text-white">Md Mobarak Hosen</span>
                 </div>
 
                 {/* Center - Large screen menu */}
@@ -37,9 +50,9 @@ const Navbar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
 
                 {/* Right - Resume + Mobile Menu */}
                 <div className="navbar-end flex items-center gap-2">
-                    <a href="/resume.pdf" download className="btn hidden sm:inline-flex">
+                    <button onClick={handleResumeClick} className="btn btn-primary hidden sm:inline-flex">
                         My Resume
-                    </a>
+                    </button>
 
                     {/* Mobile dropdown */}
                     <div className="dropdown dropdown-end lg:hidden">
@@ -69,7 +82,9 @@ const Navbar = ({ onAboutClick, onProjectsClick, onContactClick }) => {
                                 <button onClick={onContactClick}>Contact</button>
                             </li>
                             <li className="sm:hidden">
-                                <a href="/resume.pdf" download>My Resume</a>
+                                <button onClick={handleResumeClick} className="btn bg-[#605DFF] w-full">
+                                    My Resume
+                                </button>
                             </li>
                         </ul>
                     </div>

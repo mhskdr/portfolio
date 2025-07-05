@@ -9,7 +9,7 @@ const Banner = ({ onProjectsClick, onContactClick }) => {
                 <div className="flex-1 text-center lg:text-left max-w-[600px]">
                     <h1 className="text-5xl font-bold">Hello<span className='text-primary'>.</span></h1>
                     <h1 className="text-5xl font-bold">I'm Mobarak</h1>
-                    <p className="py-6">
+                    <div className="py-6 text-xl font-bold">
                         I'm a passionate Frontend Web Developer skilled with
                         <Typewriter
                             options={{
@@ -23,7 +23,7 @@ const Banner = ({ onProjectsClick, onContactClick }) => {
                                 delay: 75,
                             }}
                         />
-                    </p>
+                    </div>
                     <div className="flex gap-4 justify-center lg:justify-start">
                         <button onClick={onProjectsClick} className="btn btn-primary">View Project</button>
                         <button onClick={onContactClick} className="btn btn-primary btn-outline">Contact Now</button>

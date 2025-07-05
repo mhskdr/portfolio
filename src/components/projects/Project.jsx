@@ -45,7 +45,7 @@ const Project = forwardRef((props, ref) => {
                     <div className="md:w-1/2 space-y-4">
                         <h3 className="text-2xl font-semibold">SurveyWala</h3>
                         <div className="flex flex-wrap gap-2">
-                            {["HTML", "TailwindCSS", "ExpressJS", "Vite", "Firebse"].map((tech) => (
+                            {["HTML", "TailwindCSS", "ExpressJS", "Vite", "MongoDB", "Firebse"].map((tech) => (
                                 <span key={tech} className="badge badge-outline">
                                     {tech}
                                 </span>
@@ -79,7 +79,7 @@ const Project = forwardRef((props, ref) => {
                     <div className="md:w-1/2 space-y-4">
                         <h3 className="text-2xl font-semibold"></h3>
                         <div className="flex flex-wrap gap-2">
-                            {["HTML", "CSS", "Javascript", "Node.js"].map((tech) => (
+                            {["HTML", "CSS", "Javascript", "ExpressJS","Firebase","MongoDB"].map((tech) => (
                                 <span key={tech} className="badge badge-outline">
                                     {tech}
                                 </span>
