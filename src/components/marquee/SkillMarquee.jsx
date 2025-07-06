@@ -19,7 +19,7 @@ const SkillMarquee = () => {
     ];
     return (
         <div className="bg-[#17232d] py-4">
-            <Marquee direction="left" speed={50} gradient={false}>
+            <Marquee direction="left" speed={50} infinite={true}>
                 {skills.map((skill, index) => (
                     <span
                         key={index}
